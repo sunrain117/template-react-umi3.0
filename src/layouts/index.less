@@ -1,23 +1,18 @@
 html,
 body {
   height: 100%;
+  // background-color: red;
 }
-body > div[id] {
-  //加上[id]属性限制，解决有像日期选择框、Select选项弹层不隐藏的问题
-  height: 100%;
+.layoutWrapper{
+  height:100vh;
 }
-.layoutWrap {
-  height: 100%;
-  width: 100%;
-  font-family: PingFangSC-Regular;
-  font-weight: 400;
-  background: #ebedf0;
+.sideWrapper{
+  padding:0 24px;
 }
-@font-face {
-  font-family: 'don58-Medium';
-  src: url('//static.58.com/escstatic/webfonts/don58/don58medium.ttf');
-}
-@font-face {
-  font-family: 'don58-Regular';
-  src: url('//static.58.com/escstatic/webfonts/don58/don58round.ttf');
+.logWrapper{
+  height:64px;
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  color: #fff;
 }

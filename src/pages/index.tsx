@@ -4,7 +4,7 @@ import { Layout, Menu } from 'antd';
 import { connect } from 'dva';
 import { history } from 'umi';
 const Home = (props: any) => {
-  return null;
+  return <div>Home</div>;
 };
 
 export default connect(({ loading, index }: any) => ({

@@ -1,0 +1,28 @@
+export default [
+  {
+    path:'/',
+    component:'../layouts/BlankLayout',
+    routes:[
+      {
+        path:'/login',
+        component:'./login'
+      },
+      {
+        path:'/',
+        component:'../layouts/SecurityLayout',
+        routes:[
+          {
+            path:'/',
+            component:'../layouts/BaseLayout',
+            routes:[
+              {
+                path:'/',
+                component:'./index'
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

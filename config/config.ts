@@ -1,9 +1,10 @@
 import { defineConfig } from 'umi';
+import router from './router';
 
 export default defineConfig({
-  qiankun: {
-    slave: {},
-  },
+  // qiankun: {
+  //   slave: {},
+  // },
   nodeModulesTransform: {
     type: 'none',
   },
@@ -19,6 +20,7 @@ export default defineConfig({
     'primary-color': '#FF552E',
   },
   history: { type: 'browser' },
+  routes:router
   // proxy: {
   //   '/api': {
   //     target: 'http://oms.58v5.cn',
